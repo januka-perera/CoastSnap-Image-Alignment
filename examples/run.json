@@ -1,0 +1,22 @@
+{
+  "target": "../data/target.jpg",
+  "images": "../data/images",
+  "mask": "../data/target_mask.png",
+  "output": "../results/comparison-001",
+  "methods": ["lightglue", "flexglue"],
+  "device": "cuda",
+  "model": "homography",
+  "max_image_size": 1600,
+  "max_keypoints": 4096,
+  "ransac_threshold": 3.0,
+  "min_matches": 12,
+  "min_inliers": 10,
+  "min_inlier_ratio": 0.2,
+  "min_overlap": 0.1,
+  "min_coverage": 0.01,
+  "max_median_error": 3.0,
+  "flex_sparse": false,
+  "flex_descriptor_size": 512,
+  "warmup": true,
+  "seed": 42
+}
